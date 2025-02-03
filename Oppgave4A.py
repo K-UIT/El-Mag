@@ -18,7 +18,7 @@ V = q1/np.sqrt((X-pos1[0])**2+(Z-pos1[1])**2+r0**2)+q2/np.sqrt((X-pos2[0])**2+(Z
 
 # Plott potensial
 plt.figure(figsize=(6, 6))
-plt.contour(X, Z, V, levels=500, cmap="coolwarm")
+plt.contour(X, Z, V, levels=np.linspace(-6,6,30), cmap="viridis")
 plt.colorbar(label="Potensial V")
 
 # Plott ladningene
